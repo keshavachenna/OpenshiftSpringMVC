@@ -12,6 +12,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
+        <servlet.api.jar.path>/opt/apache-tomcat-8.0.15/lib/servlet-api.jar</servlet.api.jar.path>
+<jsp.api.jar.path>/opt/apache-tomcat-8.0.15/lib/jsp-api.jar</jsp.api.jar.path>
+
+
     </properties>
 
     <dependencies>
@@ -27,16 +31,19 @@
             <version>${spring.version}</version>
         </dependency>
 
-        
             <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
-        <version>3.1.0</version>
+        <version>3.0</version>
+        <scope>system</scope>
+        <systemPath>${servlet.api.jar.path}</systemPath>
     </dependency>
     <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>jsp-api</artifactId>
         <version>2.2</version>
+        <scope>system</scope>
+        <systemPath>${jsp.api.jar.path}</systemPath>
     </dependency>
 
 
