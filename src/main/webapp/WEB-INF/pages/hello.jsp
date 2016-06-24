@@ -1,5 +1,5 @@
 <html>
 <body>
-	<h1>${message}</h1>
+	<h1>${message}, This is a Spring Starter Project</h1>
 </body>
 </html>
