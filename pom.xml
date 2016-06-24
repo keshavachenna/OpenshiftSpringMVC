@@ -12,7 +12,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
-        <servlet.api.jar.path>https://mvnrepository.com/artifact/javax.servlet/servlet-api</servlet.api.jar.path>
     </properties>
 
     <dependencies>
@@ -28,7 +27,7 @@
             <version>${spring.version}</version>
         </dependency>
 
-            <dependency>
+<!--            <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
         <version>3.0</version>
@@ -40,7 +39,7 @@
         <artifactId>jsp-api</artifactId>
         <version>2.2</version>
     </dependency>
-
+-->
 
         <dependency>
             <groupId>org.springframework</groupId>
